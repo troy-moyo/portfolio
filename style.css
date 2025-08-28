@@ -1,0 +1,255 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General styles */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  /* Hero Section */
+.hero {
+    height: 100vh; /* full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(to right, #4CAF50, #2c3e50);
+    color: #fff;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #333;
+    color: #fff;
+  }
+  /* Projects Section */
+#projects {
+    padding: 80px 40px;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .project-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.3rem;
+    color: #4CAF50;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    padding: 0 15px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .project-card a:hover {
+    color: #2c3e50;
+  }
+  /* Skills Section */
+#skills {
+    padding: 80px 40px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  #skills h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .skills-list li {
+    background: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  .skills-list li:hover {
+    transform: scale(1.05);
+    background: #2c3e50;
+  }
+  
+  
+  nav h1 {
+    font-size: 1.5rem;
+    color: #4CAF50; /* accent color */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #4CAF50;
+  }
+  /* Contact Section */
+#contact {
+    padding: 80px 40px;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  #contact p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  #contact a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  #contact a:hover {
+    color: #2c3e50;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  /* Dark Mode */
+.dark-mode {
+    background: #1a1a1a;
+    color: #f9f9f9;
+  }
+  
+  .dark-mode nav {
+    background: #111;
+  }
+  
+  .dark-mode .project-card {
+    background: #2a2a2a;
+    color: #fff;
+  }
+  
+  .dark-mode .skills-list li {
+    background: #2c3e50;
+  }
+  
+  .dark-mode footer {
+    background: #111;
+  }
+  
+  
+  
